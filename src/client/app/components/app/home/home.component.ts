@@ -5,15 +5,17 @@ import {Store} from '@ngrx/store';
 import {FormComponent} from '../../../frameworks/core.framework/index';
 import {NameListService} from '../../../frameworks/app.framework/index';
 import { FORM_DIRECTIVES } from '@angular/common';
-import { Inject } from '@angular/core';
+import { Inject, ViewEncapsulation } from '@angular/core';
 import {NameService} from './services/name-service';
+import {InputText,Button,Dialog} from 'primeng/primeng';
 
 @FormComponent({
   selector: 'sd-home',
   templateUrl: './app/components/app/home/home.component.html',
   styleUrls: ['./app/components/app/home/home.component.css'],
-	directives: [FORM_DIRECTIVES],
-  providers: [NameService]
+  directives: [FORM_DIRECTIVES,  InputText, Button, Dialog],
+  providers: [NameService],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class HomeComponent {
