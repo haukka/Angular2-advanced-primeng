@@ -1,0 +1,20 @@
+<h2>
+  {{ 'LOVE_TECH' | translate }} <smile></smile>
+</h2>
+
+<p>
+  {{'ABOUT_REWARD' | translate}}
+</p>
+<p>
+  {{'ABOUT_ADD' | translate}}
+</p>
+
+<form (submit)="addName()">
+  <input pInputText [(ngModel)]="newName" placeholder="Awesome Computer Scientist">
+  <button pButton type="submit" label="Add" icon="fa-plus"></button>
+</form>
+
+<a href="home.component.html" id="" title="home">home</a>
+<ul>
+  <li *ngFor="let name of nameListService.names | async">{{name}}</li>
+</ul>
