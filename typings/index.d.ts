@@ -13,6 +13,7 @@
 /// <reference path="globals/gulp-util/index.d.ts" />
 /// <reference path="globals/gulp/index.d.ts" />
 /// <reference path="globals/jasmine/index.d.ts" />
+/// <reference path="globals/jquery/index.d.ts" />
 /// <reference path="globals/lodash/index.d.ts" />
 /// <reference path="globals/micromatch/index.d.ts" />
 /// <reference path="globals/mime/index.d.ts" />

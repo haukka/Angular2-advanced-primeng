@@ -316,6 +316,8 @@ export class SeedConfig {
       [this.BOOTSTRAP_MODULE]: `${this.APP_BASE}${this.BOOTSTRAP_MODULE}`,
       'rxjs/*': `${this.APP_BASE}node_modules/rxjs/*`,
 	  'primeng': `${this.APP_BASE}node_modules/primeng`,
+	  'jquery': `${this.APP_BASE}node_modules/jquery`,
+	  'ng2-bootstrap': `${this.APP_BASE}node_modules/ng2-bootstrap`,
       'app/*': `/app/*`,
       '*': `${this.APP_BASE}node_modules/*`
     },

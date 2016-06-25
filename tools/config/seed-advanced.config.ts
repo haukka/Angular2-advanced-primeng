@@ -46,6 +46,9 @@ export class SeedAdvancedConfig extends SeedConfig {
       
       this.SYSTEM_CONFIG.paths['ng2-translate/*'] = `${this.APP_BASE}node_modules/ng2-translate/*`;
 	  this.SYSTEM_CONFIG.paths['primeng/*'] = `${this.APP_BASE}node_modules/primeng/*`;
+	  this.SYSTEM_CONFIG.paths['ng2-bootstrap/*'] = `${this.APP_BASE}node_modules/ng2-bootstrap/*`;
+	  this.SYSTEM_CONFIG.paths['jquery/*'] = `${this.APP_BASE}node_modules/jquery/*`;
+	  this.SYSTEM_CONFIG.paths['jquery-slimscroll/*'] = `${this.APP_BASE}node_modules/jquery-slimscroll/*`;
       this.SYSTEM_CONFIG.paths['reflect-metadata'] = `${this.APP_BASE}node_modules/reflect-metadata/Reflect`;
     } 
 

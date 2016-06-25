@@ -27,11 +27,38 @@
   </script>
   <% } %>
   
+   <script src="node_modules/systemjs/dist/system.src.js"></script>
+  
+<!-- Material -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+<link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.indigo-blue.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en" />
+<script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/icon/apple-icon-57x57.png?v=2">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/icon/apple-icon-60x60.png?v=2">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/icon/apple-icon-72x72.png?v=2">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/icon/apple-icon-76x76.png?v=2">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/icon/apple-icon-114x114.png?v=2">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/icon/apple-icon-120x120.png?v=2">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/icon/apple-icon-144x144.png?v=2">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icon/apple-icon-152x152.png?v=2">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icon/apple-icon-180x180.png?v=2">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/icon/android-icon-192x192.png?v=2">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icon/favicon-32x32.png?v=2">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/icon/favicon-96x96.png?v=2">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icon/favicon-16x16.png?v=2">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="assets/icon/ms-icon-144x144.png?v=2">
+  <meta name="theme-color" content="#4691d1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
-
   <sd-app>Loading...</sd-app>
-
+  <div id="preloader">
+    <div></div>
+  </div>
   <script>
   // function.name (all IE)
   // Remove once https://github.com/angular/angular/issues/6501 is fixed.
@@ -87,6 +114,7 @@
   <% if (TARGET_DESKTOP && ENV !== 'prod') { %>
   <script>require('electron-connect').client.create()</script> 
   <% } %>
+
 
 </body>
 </html>

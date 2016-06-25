@@ -16,8 +16,9 @@ export class ProjectConfig extends SeedAdvancedConfig {
     let additional_deps: InjectableDependency[] = [
 		{src: 'primeui/themes/delta/theme.css', inject: true},
 		{src: 'primeui/primeui-ng-all.min.css', inject: true},
-		{src: 'primeui/primeui-ng-all.min.js', inject: true}
-      // {src: 'jquery/dist/jquery.min.js', inject: 'libs'},
+		{src: 'primeui/primeui-ng-all.min.js', inject: true},
+		{src: 'jquery-slimscroll/jquery.slimscroll.min.js', inject: true},
+        {src: 'jquery/dist/jquery.min.js', inject: 'libs'}
     ];
 
     const seedDependencies = this.NPM_DEPENDENCIES;

@@ -1,3 +1,17 @@
-<h1>Angular 2 Seed Advanced</h1>
-<lang-switcher></lang-switcher>
-<more></more>
+<nav class="navbar navbar-default">
+<div class="page-top clearfix" baScrollPositionDirective maxHeight="50" (scrollChange)="scrolledChanged($event)"
+     [ngClass]="{scrolled: isScrolled}">
+  <a href="#/pages/dashboard" class="al-logo clearfix"><span>ng2-</span>Saturne</a>
+  <a (click)="toggleMenu()" class="collapse-menu-link glyphicon glyphicon-transfer"></a>
+
+  <div class="search">
+    <i class="glyphicon glyphicon-search" ng-click="startSearch()"></i>
+    <input id="searchInput" type="text" placeholder="Search for...">
+  </div>
+
+  <div class="user-profile clearfix">
+	<lang-switcher></lang-switcher>
+	<more></more>
+  </div>
+</div>
+</nav>

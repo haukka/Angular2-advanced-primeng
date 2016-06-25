@@ -1,5 +1,13 @@
 <div platform>
   <sd-toolbar></sd-toolbar>
+  <main [ngClass]="{'menu-collapsed': isMenuCollapsed}">
+  <div class="additional-bg"></div>
   <sd-navbar></sd-navbar>
+  <div class="al-main">
+  <div class="al-content">
+  <sd-undertop></sd-undertop>
   <router-outlet></router-outlet>
+  </div>
+  </div>
+  </main>
 </div>

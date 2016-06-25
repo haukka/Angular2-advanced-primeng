@@ -15,6 +15,7 @@ import {ANALYTICS_PROVIDERS} from './app/frameworks/analytics.framework/index';
 import {MultilingualService} from './app/frameworks/i18n.framework/index';
 import {APP_PROVIDERS, AppConfigService} from './app/frameworks/app.framework/index';
 import {AppComponent} from './app/components/app/app.component';
+import {AppState} from './app/components/app/app.state';
 // custom i18n language support
 MultilingualService.SUPPORTED_LANGUAGES = AppConfigService.SUPPORTED_LANGUAGES;
 
@@ -32,7 +33,8 @@ let BOOTSTRAP_PROVIDERS: any[] = [
   provide(ConsoleService, { useValue: console }),
   CORE_PROVIDERS,
   ANALYTICS_PROVIDERS,
-  APP_PROVIDERS
+  APP_PROVIDERS,
+  AppState
 ];
 
 if ('<%= TARGET_DESKTOP %>' === 'true') {
